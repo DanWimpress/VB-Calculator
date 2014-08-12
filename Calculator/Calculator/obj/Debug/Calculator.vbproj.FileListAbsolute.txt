@@ -1,0 +1,14 @@
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\bin\Debug\Calculator.exe
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\bin\Debug\Calculator.pdb
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.vbprojResolveAssemblyReference.cache
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.exe
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
+Z:\Users\Dan\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.Cache
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.vbprojResolveAssemblyReference.cache
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.Cache
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb

@@ -360,7 +360,6 @@ Partial Class MainForm
 	
 	Sub Btn0Click(sender As Object, e As EventArgs)
 		If txtDisplayBox.Text.Length >= 1 Then
-			txtSumBox.Text += btn0.Text
 			If inputFlag Then
 				txtDisplayBox.Text += btn0.Text
 			Else
@@ -372,110 +371,39 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn1Click(sender As Object, e As EventArgs)
-		'txtSumBox.Text += btn1.Text
-		'If inputFlag Then
-			'txtDisplayBox.Text += btn1.Text
-			'calculateFlag = True
-		'Else
-			'txtDisplayBox.Text = btn1.Text
-			'inputFlag = True
-			'calculateFlag = True
-			'End If
-			PrintNums(btn1)
+		PrintNums(btn1)
 	End Sub
 	
 	Sub Btn2Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn2.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn2.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn2.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn2)
 	End Sub
 	
 	Sub Btn3Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn3.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn3.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn3.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn3)
 	End Sub
 	
 	Sub Btn4Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn4.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn4.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn4.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn4)
 	End Sub
 	
 	Sub Btn5Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn5.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn5.Text
-		Else
-			txtDisplayBox.Text = btn5.Text
-			inputFlag = True
-		End If
+		PrintNums(btn5)
 	End Sub
 	
 	Sub Btn6Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn6.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn6.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn6.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn6)
 	End Sub
 	
 	Sub Btn7Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn7.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn7.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn7.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn7)		
 	End Sub
 	
 	Sub Btn8Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn8.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn8.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn8.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn8)
 	End Sub
 	
 	Sub Btn9Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn9.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn9.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn9.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		PrintNums(btn9)
 	End Sub
 	
 	Sub BtnClearClick(sender As Object, e As EventArgs)
@@ -534,7 +462,7 @@ Partial Class MainForm
 		mathmaticalOperator = "-"
 	End Sub
 	
-	Private Sub PrintNums(ByVal btnNumber As Button)
+	Private Sub DisplayNums(ByVal btnNumber As Button)
 		txtSumBox.Text += btnNumber.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btnNumber.Text

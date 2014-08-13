@@ -372,15 +372,16 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn1Click(sender As Object, e As EventArgs)
-		txtSumBox.Text += btn1.Text
-		If inputFlag Then
-			txtDisplayBox.Text += btn1.Text
-			calculateFlag = True
-		Else
-			txtDisplayBox.Text = btn1.Text
-			inputFlag = True
-			calculateFlag = True
-		End If
+		'txtSumBox.Text += btn1.Text
+		'If inputFlag Then
+			'txtDisplayBox.Text += btn1.Text
+			'calculateFlag = True
+		'Else
+			'txtDisplayBox.Text = btn1.Text
+			'inputFlag = True
+			'calculateFlag = True
+			'End If
+			PrintNums(btn1)
 	End Sub
 	
 	Sub Btn2Click(sender As Object, e As EventArgs)
@@ -486,6 +487,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnPlusClick(sender As Object, e As EventArgs)
+		txtSumBox.Text += " " + btnPlus.Text + " "
 		If mathmaticalOperator = String.Empty Then
 			firstNum = Val(txtDisplayBox.Text)
 			txtDisplayBox.Text = ""
@@ -530,6 +532,18 @@ Partial Class MainForm
 			CalculateNums()
 		End If
 		mathmaticalOperator = "-"
+	End Sub
+	
+	Private Sub PrintNums(ByVal btnNumber As Button)
+		txtSumBox.Text += btnNumber.Text
+		If inputFlag Then
+			txtDisplayBox.Text += btnNumber.Text
+			calculateFlag = True
+		Else
+			txtDisplayBox.Text = btnNumber.Text
+			inputFlag = True
+			calculateFlag = True
+		End If
 	End Sub
 	
 	Private Sub CalculateNums()

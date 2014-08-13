@@ -452,17 +452,33 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnSubtractClick(sender As Object, e As EventArgs)
-		txtSumBox.Text += " " + btnSubtract.Text + " "
+		PrintOperator(btnSubtract)
+	End Sub
+	
+	Sub BtnDecimalClick(sender As Object, e As EventArgs)
+		txtSumBox.Text += btnDecimal.Text
+		If Not txtDisplayBox.Text.Contains(".") Then
+			If txtDisplayBox.Text.Length = 0 Then
+				inputFlag = True
+				txtDisplayBox.Text = "0" + btnDecimal.Text
+			Else
+				txtDisplayBox.Text += btnDecimal.Text
+			End If			
+		End If
+	End Sub
+	
+	Private Sub PrintOperator(ByVal btnOperator As Button)
+		txtSumBox.Text += " " + btnOperator.Text + " "
 		If mathmaticalOperator = String.Empty Then
 			firstNum = Val(txtDisplayBox.Text)
 			txtDisplayBox.Text = ""
 		Else
 			CalculateNums()
 		End If
-		mathmaticalOperator = "-"
+		mathmaticalOperator = btnOperator.Text
 	End Sub
 	
-	Private Sub DisplayNums(ByVal btnNumber As Button)
+	Private Sub PrintNums(ByVal btnNumber As Button)
 		txtSumBox.Text += btnNumber.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btnNumber.Text
@@ -491,17 +507,5 @@ Partial Class MainForm
    		inputFlag = False
    		calculateFlag = False
    		End If
-	End Sub
-	
-	Sub BtnDecimalClick(sender As Object, e As EventArgs)
-		txtSumBox.Text += btnDecimal.Text
-		If Not txtDisplayBox.Text.Contains(".") Then
-			If txtDisplayBox.Text.Length = 0 Then
-				inputFlag = True
-				txtDisplayBox.Text = "0" + btnDecimal.Text
-			Else
-				txtDisplayBox.Text += btnDecimal.Text
-			End If			
-		End If
 	End Sub
 End Class

@@ -228,7 +228,7 @@ Partial Class MainForm
 		'
 		Me.btnClear.BackgroundImage = CType(resources.GetObject("btnClear.BackgroundImage"),System.Drawing.Image)
 		Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btnClear.Location = New System.Drawing.Point(68, 82)
+		Me.btnClear.Location = New System.Drawing.Point(68, 78)
 		Me.btnClear.Name = "btnClear"
 		Me.btnClear.Size = New System.Drawing.Size(44, 23)
 		Me.btnClear.TabIndex = 14
@@ -307,7 +307,7 @@ Partial Class MainForm
 		'
 		Me.btnBackspace.BackgroundImage = CType(resources.GetObject("btnBackspace.BackgroundImage"),System.Drawing.Image)
 		Me.btnBackspace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btnBackspace.Location = New System.Drawing.Point(25, 82)
+		Me.btnBackspace.Location = New System.Drawing.Point(25, 78)
 		Me.btnBackspace.Name = "btnBackspace"
 		Me.btnBackspace.Size = New System.Drawing.Size(37, 23)
 		Me.btnBackspace.TabIndex = 22
@@ -465,6 +465,13 @@ Partial Class MainForm
 		End If
 	End Sub
 	
+	Sub BtnBackspaceClick(sender As Object, e As EventArgs)
+		If txtDisplayBox.Text.Length >= 1 Then
+			txtDisplayBox.Text = txtDisplayBox.Text.Remove(txtDisplayBox.Text.Length -1)
+			txtSumBox.Text = txtSumBox.Text.Remove(txtSumBox.Text.Length -1)
+		End If
+	End Sub
+	
 	Private Sub PrintOperator(ByVal btnOperator As Button)
 		If sumInputFlag Then
 			txtSumBox.Text += " " + btnOperator.Text + " "
@@ -503,18 +510,11 @@ Partial Class MainForm
 	   			Case "*"
 		   			firstNum = firstNum * secondNum
 	   			Case "/"
-		   			firstNum = firstNum / secondNum
+	   				firstNum = firstNum / secondNum
    		End Select
    		txtDisplayBox.Text = CType(firstNum, String)
    		inputFlag = False
    		calculateFlag = False
    		End If
-	End Sub
-	
-	Sub BtnBackspaceClick(sender As Object, e As EventArgs)
-		If txtDisplayBox.Text.Length >= 1 Then
-			txtDisplayBox.Text = txtDisplayBox.Text.Remove(txtDisplayBox.Text.Length -1)
-			txtSumBox.Text = txtSumBox.Text.Remove(txtSumBox.Text.Length -1)
-		End If
 	End Sub
 End Class

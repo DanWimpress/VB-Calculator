@@ -12,3 +12,10 @@ Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator
 Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.Cache
 Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
 Z:\Users\Dan\Documents\SharpDevelop Projects\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb
+Z:\GitHub\VB-Calculator\Calculator\Calculator\bin\Debug\Calculator.exe
+Z:\GitHub\VB-Calculator\Calculator\Calculator\bin\Debug\Calculator.pdb
+Z:\GitHub\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.vbprojResolveAssemblyReference.cache
+Z:\GitHub\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
+Z:\GitHub\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.vbproj.GenerateResource.Cache
+Z:\GitHub\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.exe
+Z:\GitHub\VB-Calculator\Calculator\Calculator\obj\Debug\Calculator.pdb

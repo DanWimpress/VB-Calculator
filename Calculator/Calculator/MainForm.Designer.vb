@@ -33,6 +33,7 @@ Partial Class MainForm
 	''' not be able to load this method if it was changed manually.
 	''' </summary>
 	Private Sub InitializeComponent()
+		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
 		Me.txtDisplayBox = New System.Windows.Forms.Label()
 		Me.btn0 = New System.Windows.Forms.Button()
 		Me.btn1 = New System.Windows.Forms.Button()
@@ -56,16 +57,19 @@ Partial Class MainForm
 		'txtDisplayBox
 		'
 		Me.txtDisplayBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
-		Me.txtDisplayBox.Location = New System.Drawing.Point(52, 62)
+		Me.txtDisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.txtDisplayBox.Location = New System.Drawing.Point(22, 31)
 		Me.txtDisplayBox.Name = "txtDisplayBox"
 		Me.txtDisplayBox.Size = New System.Drawing.Size(169, 20)
 		Me.txtDisplayBox.TabIndex = 1
 		'
 		'btn0
 		'
-		Me.btn0.Location = New System.Drawing.Point(59, 202)
+		Me.btn0.BackgroundImage = CType(resources.GetObject("btn0.BackgroundImage"),System.Drawing.Image)
+		Me.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn0.Location = New System.Drawing.Point(24, 188)
 		Me.btn0.Name = "btn0"
-		Me.btn0.Size = New System.Drawing.Size(37, 23)
+		Me.btn0.Size = New System.Drawing.Size(37, 27)
 		Me.btn0.TabIndex = 2
 		Me.btn0.Text = "0"
 		Me.btn0.UseVisualStyleBackColor = true
@@ -73,9 +77,11 @@ Partial Class MainForm
 		'
 		'btn1
 		'
-		Me.btn1.Location = New System.Drawing.Point(59, 173)
+		Me.btn1.BackgroundImage = CType(resources.GetObject("btn1.BackgroundImage"),System.Drawing.Image)
+		Me.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn1.Location = New System.Drawing.Point(24, 155)
 		Me.btn1.Name = "btn1"
-		Me.btn1.Size = New System.Drawing.Size(37, 23)
+		Me.btn1.Size = New System.Drawing.Size(37, 27)
 		Me.btn1.TabIndex = 3
 		Me.btn1.Text = "1"
 		Me.btn1.UseVisualStyleBackColor = true
@@ -83,9 +89,11 @@ Partial Class MainForm
 		'
 		'btn2
 		'
-		Me.btn2.Location = New System.Drawing.Point(115, 173)
+		Me.btn2.BackgroundImage = CType(resources.GetObject("btn2.BackgroundImage"),System.Drawing.Image)
+		Me.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn2.Location = New System.Drawing.Point(67, 155)
 		Me.btn2.Name = "btn2"
-		Me.btn2.Size = New System.Drawing.Size(37, 23)
+		Me.btn2.Size = New System.Drawing.Size(37, 27)
 		Me.btn2.TabIndex = 4
 		Me.btn2.Text = "2"
 		Me.btn2.UseVisualStyleBackColor = true
@@ -93,9 +101,11 @@ Partial Class MainForm
 		'
 		'btn3
 		'
-		Me.btn3.Location = New System.Drawing.Point(170, 173)
+		Me.btn3.BackgroundImage = CType(resources.GetObject("btn3.BackgroundImage"),System.Drawing.Image)
+		Me.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn3.Location = New System.Drawing.Point(110, 155)
 		Me.btn3.Name = "btn3"
-		Me.btn3.Size = New System.Drawing.Size(36, 23)
+		Me.btn3.Size = New System.Drawing.Size(36, 27)
 		Me.btn3.TabIndex = 5
 		Me.btn3.Text = "3"
 		Me.btn3.UseVisualStyleBackColor = true
@@ -103,9 +113,11 @@ Partial Class MainForm
 		'
 		'btn4
 		'
-		Me.btn4.Location = New System.Drawing.Point(59, 144)
+		Me.btn4.BackgroundImage = CType(resources.GetObject("btn4.BackgroundImage"),System.Drawing.Image)
+		Me.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn4.Location = New System.Drawing.Point(24, 121)
 		Me.btn4.Name = "btn4"
-		Me.btn4.Size = New System.Drawing.Size(37, 23)
+		Me.btn4.Size = New System.Drawing.Size(37, 28)
 		Me.btn4.TabIndex = 6
 		Me.btn4.Text = "4"
 		Me.btn4.UseVisualStyleBackColor = true
@@ -113,9 +125,11 @@ Partial Class MainForm
 		'
 		'btn5
 		'
-		Me.btn5.Location = New System.Drawing.Point(115, 144)
+		Me.btn5.BackgroundImage = CType(resources.GetObject("btn5.BackgroundImage"),System.Drawing.Image)
+		Me.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn5.Location = New System.Drawing.Point(67, 121)
 		Me.btn5.Name = "btn5"
-		Me.btn5.Size = New System.Drawing.Size(37, 23)
+		Me.btn5.Size = New System.Drawing.Size(37, 28)
 		Me.btn5.TabIndex = 7
 		Me.btn5.Text = "5"
 		Me.btn5.UseVisualStyleBackColor = true
@@ -123,9 +137,11 @@ Partial Class MainForm
 		'
 		'btn6
 		'
-		Me.btn6.Location = New System.Drawing.Point(170, 144)
+		Me.btn6.BackgroundImage = CType(resources.GetObject("btn6.BackgroundImage"),System.Drawing.Image)
+		Me.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn6.Location = New System.Drawing.Point(110, 121)
 		Me.btn6.Name = "btn6"
-		Me.btn6.Size = New System.Drawing.Size(36, 23)
+		Me.btn6.Size = New System.Drawing.Size(36, 28)
 		Me.btn6.TabIndex = 8
 		Me.btn6.Text = "6"
 		Me.btn6.UseVisualStyleBackColor = true
@@ -133,19 +149,24 @@ Partial Class MainForm
 		'
 		'btn7
 		'
-		Me.btn7.Location = New System.Drawing.Point(59, 115)
+		Me.btn7.BackColor = System.Drawing.SystemColors.InactiveBorder
+		Me.btn7.BackgroundImage = CType(resources.GetObject("btn7.BackgroundImage"),System.Drawing.Image)
+		Me.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn7.Location = New System.Drawing.Point(24, 86)
 		Me.btn7.Name = "btn7"
-		Me.btn7.Size = New System.Drawing.Size(37, 23)
+		Me.btn7.Size = New System.Drawing.Size(37, 29)
 		Me.btn7.TabIndex = 9
 		Me.btn7.Text = "7"
-		Me.btn7.UseVisualStyleBackColor = true
+		Me.btn7.UseVisualStyleBackColor = false
 		AddHandler Me.btn7.Click, AddressOf Me.Btn7Click
 		'
 		'btn8
 		'
-		Me.btn8.Location = New System.Drawing.Point(115, 115)
+		Me.btn8.BackgroundImage = CType(resources.GetObject("btn8.BackgroundImage"),System.Drawing.Image)
+		Me.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn8.Location = New System.Drawing.Point(67, 86)
 		Me.btn8.Name = "btn8"
-		Me.btn8.Size = New System.Drawing.Size(37, 23)
+		Me.btn8.Size = New System.Drawing.Size(37, 29)
 		Me.btn8.TabIndex = 10
 		Me.btn8.Text = "8"
 		Me.btn8.UseVisualStyleBackColor = true
@@ -153,9 +174,11 @@ Partial Class MainForm
 		'
 		'btn9
 		'
-		Me.btn9.Location = New System.Drawing.Point(170, 114)
+		Me.btn9.BackgroundImage = CType(resources.GetObject("btn9.BackgroundImage"),System.Drawing.Image)
+		Me.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btn9.Location = New System.Drawing.Point(110, 86)
 		Me.btn9.Name = "btn9"
-		Me.btn9.Size = New System.Drawing.Size(36, 23)
+		Me.btn9.Size = New System.Drawing.Size(36, 29)
 		Me.btn9.TabIndex = 11
 		Me.btn9.Text = "9"
 		Me.btn9.UseVisualStyleBackColor = true
@@ -163,9 +186,9 @@ Partial Class MainForm
 		'
 		'btnEquals
 		'
-		Me.btnEquals.Location = New System.Drawing.Point(170, 202)
+		Me.btnEquals.Location = New System.Drawing.Point(110, 188)
 		Me.btnEquals.Name = "btnEquals"
-		Me.btnEquals.Size = New System.Drawing.Size(36, 23)
+		Me.btnEquals.Size = New System.Drawing.Size(36, 27)
 		Me.btnEquals.TabIndex = 12
 		Me.btnEquals.Text = "="
 		Me.btnEquals.UseVisualStyleBackColor = true
@@ -173,9 +196,9 @@ Partial Class MainForm
 		'
 		'btnPlus
 		'
-		Me.btnPlus.Location = New System.Drawing.Point(223, 114)
+		Me.btnPlus.Location = New System.Drawing.Point(152, 86)
 		Me.btnPlus.Name = "btnPlus"
-		Me.btnPlus.Size = New System.Drawing.Size(34, 23)
+		Me.btnPlus.Size = New System.Drawing.Size(34, 29)
 		Me.btnPlus.TabIndex = 13
 		Me.btnPlus.Text = "+"
 		Me.btnPlus.UseVisualStyleBackColor = true
@@ -183,7 +206,7 @@ Partial Class MainForm
 		'
 		'btnClear
 		'
-		Me.btnClear.Location = New System.Drawing.Point(246, 59)
+		Me.btnClear.Location = New System.Drawing.Point(24, 57)
 		Me.btnClear.Name = "btnClear"
 		Me.btnClear.Size = New System.Drawing.Size(44, 23)
 		Me.btnClear.TabIndex = 14
@@ -193,19 +216,19 @@ Partial Class MainForm
 		'
 		'btnMultiply
 		'
-		Me.btnMultiply.Location = New System.Drawing.Point(223, 173)
+		Me.btnMultiply.Location = New System.Drawing.Point(152, 155)
 		Me.btnMultiply.Name = "btnMultiply"
-		Me.btnMultiply.Size = New System.Drawing.Size(34, 23)
+		Me.btnMultiply.Size = New System.Drawing.Size(34, 27)
 		Me.btnMultiply.TabIndex = 16
-		Me.btnMultiply.Text = "X"
+		Me.btnMultiply.Text = "*"
 		Me.btnMultiply.UseVisualStyleBackColor = true
 		AddHandler Me.btnMultiply.Click, AddressOf Me.BtnMultiplyClick
 		'
 		'buttonDivide
 		'
-		Me.buttonDivide.Location = New System.Drawing.Point(223, 203)
+		Me.buttonDivide.Location = New System.Drawing.Point(152, 188)
 		Me.buttonDivide.Name = "buttonDivide"
-		Me.buttonDivide.Size = New System.Drawing.Size(34, 23)
+		Me.buttonDivide.Size = New System.Drawing.Size(34, 27)
 		Me.buttonDivide.TabIndex = 17
 		Me.buttonDivide.Text = "/"
 		Me.buttonDivide.UseVisualStyleBackColor = true
@@ -213,9 +236,9 @@ Partial Class MainForm
 		'
 		'btnSubtract
 		'
-		Me.btnSubtract.Location = New System.Drawing.Point(223, 144)
+		Me.btnSubtract.Location = New System.Drawing.Point(152, 121)
 		Me.btnSubtract.Name = "btnSubtract"
-		Me.btnSubtract.Size = New System.Drawing.Size(34, 23)
+		Me.btnSubtract.Size = New System.Drawing.Size(34, 28)
 		Me.btnSubtract.TabIndex = 19
 		Me.btnSubtract.Text = "-"
 		Me.btnSubtract.UseVisualStyleBackColor = true
@@ -224,9 +247,9 @@ Partial Class MainForm
 		'btnDecimal
 		'
 		Me.btnDecimal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-		Me.btnDecimal.Location = New System.Drawing.Point(115, 202)
+		Me.btnDecimal.Location = New System.Drawing.Point(67, 188)
 		Me.btnDecimal.Name = "btnDecimal"
-		Me.btnDecimal.Size = New System.Drawing.Size(37, 23)
+		Me.btnDecimal.Size = New System.Drawing.Size(37, 27)
 		Me.btnDecimal.TabIndex = 20
 		Me.btnDecimal.Text = "."
 		Me.btnDecimal.UseVisualStyleBackColor = true
@@ -236,7 +259,9 @@ Partial Class MainForm
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(315, 268)
+		Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+		Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"),System.Drawing.Image)
+		Me.ClientSize = New System.Drawing.Size(216, 272)
 		Me.Controls.Add(Me.btnDecimal)
 		Me.Controls.Add(Me.btnSubtract)
 		Me.Controls.Add(Me.buttonDivide)
@@ -255,6 +280,7 @@ Partial Class MainForm
 		Me.Controls.Add(Me.btn1)
 		Me.Controls.Add(Me.btn0)
 		Me.Controls.Add(Me.txtDisplayBox)
+		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
 		Me.Name = "MainForm"
 		Me.Text = "Calculator"
 		Me.ResumeLayout(false)

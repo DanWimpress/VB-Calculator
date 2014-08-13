@@ -357,6 +357,7 @@ Partial Class MainForm
 	Dim mathmaticalOperator As String
 	Dim inputFlag As Boolean
 	Dim calculateFlag As Boolean
+	Dim sumInputFlag As Boolean
 	
 	Sub Btn0Click(sender As Object, e As EventArgs)
 		If txtDisplayBox.Text.Length >= 1 Then
@@ -447,7 +448,10 @@ Partial Class MainForm
 	End Sub
 	
 	Private Sub PrintOperator(ByVal btnOperator As Button)
-		txtSumBox.Text += " " + btnOperator.Text + " "
+		If sumInputFlag Then
+			txtSumBox.Text += " " + btnOperator.Text + " "
+			sumInputFlag = False
+		End If
 		If mathmaticalOperator = String.Empty Then
 			firstNum = Val(txtDisplayBox.Text)
 			txtDisplayBox.Text = ""
@@ -459,6 +463,7 @@ Partial Class MainForm
 	
 	Private Sub PrintNums(ByVal btnNumber As Button)
 		txtSumBox.Text += btnNumber.Text
+		sumInputFlag = True
 		If inputFlag Then
 			txtDisplayBox.Text += btnNumber.Text
 			calculateFlag = True

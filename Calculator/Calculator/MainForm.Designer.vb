@@ -406,23 +406,8 @@ Partial Class MainForm
 		PrintNums(btn9)
 	End Sub
 	
-	Sub BtnClearClick(sender As Object, e As EventArgs)
-		txtSumBox.Text = ""
-		txtDisplayBox.Text = ""
-		mathmaticalOperator = ""
-		firstNum = 0
-		secondNum = 0		
-	End Sub
-	
 	Sub BtnPlusClick(sender As Object, e As EventArgs)
-		txtSumBox.Text += " " + btnPlus.Text + " "
-		If mathmaticalOperator = String.Empty Then
-			firstNum = Val(txtDisplayBox.Text)
-			txtDisplayBox.Text = ""
-		Else
-			CalculateNums()
-		End If
-		mathmaticalOperator = "+"
+		PrintOperator(btnPlus)
 	End Sub
 	
 	Sub BtnEqualsClick(sender As Object, e As EventArgs)
@@ -430,29 +415,23 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnMultiplyClick(sender As Object, e As EventArgs)
-		txtSumBox.Text += " " + btnMultiply.Text + " "
-		If mathmaticalOperator = String.Empty Then
-			firstNum = Val(txtDisplayBox.Text)
-			txtDisplayBox.Text = ""
-		Else
-			CalculateNums()
-		End If
-		mathmaticalOperator = "*"
+		PrintOperator(btnMultiply)
 	End Sub
 	
 	Sub ButtonDivideClick(sender As Object, e As EventArgs)
-		txtSumBox.Text += " " + buttonDivide.Text + " "
-		If mathmaticalOperator = String.Empty Then
-			firstNum = Val(txtDisplayBox.Text)
-			txtDisplayBox.Text = ""
-		Else
-			CalculateNums()
-		End If
-		mathmaticalOperator = "/"
+		PrintOperator(buttonDivide)
 	End Sub
 	
 	Sub BtnSubtractClick(sender As Object, e As EventArgs)
 		PrintOperator(btnSubtract)
+	End Sub
+	
+	Sub BtnClearClick(sender As Object, e As EventArgs)
+		txtSumBox.Text = ""
+		txtDisplayBox.Text = ""
+		mathmaticalOperator = ""
+		firstNum = 0
+		secondNum = 0		
 	End Sub
 	
 	Sub BtnDecimalClick(sender As Object, e As EventArgs)

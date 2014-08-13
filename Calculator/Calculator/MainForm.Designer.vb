@@ -52,22 +52,26 @@ Partial Class MainForm
 		Me.buttonDivide = New System.Windows.Forms.Button()
 		Me.btnSubtract = New System.Windows.Forms.Button()
 		Me.btnDecimal = New System.Windows.Forms.Button()
+		Me.txtSumBox = New System.Windows.Forms.TextBox()
 		Me.SuspendLayout
 		'
 		'txtDisplayBox
 		'
 		Me.txtDisplayBox.BackColor = System.Drawing.SystemColors.ButtonHighlight
 		Me.txtDisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.txtDisplayBox.Location = New System.Drawing.Point(22, 31)
+		Me.txtDisplayBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.txtDisplayBox.Location = New System.Drawing.Point(12, 9)
 		Me.txtDisplayBox.Name = "txtDisplayBox"
-		Me.txtDisplayBox.Size = New System.Drawing.Size(169, 20)
+		Me.txtDisplayBox.Size = New System.Drawing.Size(192, 52)
 		Me.txtDisplayBox.TabIndex = 1
+		Me.txtDisplayBox.TextAlign = System.Drawing.ContentAlignment.BottomRight
 		'
 		'btn0
 		'
 		Me.btn0.BackgroundImage = CType(resources.GetObject("btn0.BackgroundImage"),System.Drawing.Image)
 		Me.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn0.Location = New System.Drawing.Point(24, 188)
+		Me.btn0.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn0.Location = New System.Drawing.Point(25, 213)
 		Me.btn0.Name = "btn0"
 		Me.btn0.Size = New System.Drawing.Size(37, 27)
 		Me.btn0.TabIndex = 2
@@ -79,7 +83,8 @@ Partial Class MainForm
 		'
 		Me.btn1.BackgroundImage = CType(resources.GetObject("btn1.BackgroundImage"),System.Drawing.Image)
 		Me.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn1.Location = New System.Drawing.Point(24, 155)
+		Me.btn1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn1.Location = New System.Drawing.Point(25, 180)
 		Me.btn1.Name = "btn1"
 		Me.btn1.Size = New System.Drawing.Size(37, 27)
 		Me.btn1.TabIndex = 3
@@ -91,7 +96,8 @@ Partial Class MainForm
 		'
 		Me.btn2.BackgroundImage = CType(resources.GetObject("btn2.BackgroundImage"),System.Drawing.Image)
 		Me.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn2.Location = New System.Drawing.Point(67, 155)
+		Me.btn2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn2.Location = New System.Drawing.Point(68, 180)
 		Me.btn2.Name = "btn2"
 		Me.btn2.Size = New System.Drawing.Size(37, 27)
 		Me.btn2.TabIndex = 4
@@ -103,7 +109,8 @@ Partial Class MainForm
 		'
 		Me.btn3.BackgroundImage = CType(resources.GetObject("btn3.BackgroundImage"),System.Drawing.Image)
 		Me.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn3.Location = New System.Drawing.Point(110, 155)
+		Me.btn3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn3.Location = New System.Drawing.Point(111, 180)
 		Me.btn3.Name = "btn3"
 		Me.btn3.Size = New System.Drawing.Size(36, 27)
 		Me.btn3.TabIndex = 5
@@ -115,7 +122,8 @@ Partial Class MainForm
 		'
 		Me.btn4.BackgroundImage = CType(resources.GetObject("btn4.BackgroundImage"),System.Drawing.Image)
 		Me.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn4.Location = New System.Drawing.Point(24, 121)
+		Me.btn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn4.Location = New System.Drawing.Point(25, 146)
 		Me.btn4.Name = "btn4"
 		Me.btn4.Size = New System.Drawing.Size(37, 28)
 		Me.btn4.TabIndex = 6
@@ -127,7 +135,8 @@ Partial Class MainForm
 		'
 		Me.btn5.BackgroundImage = CType(resources.GetObject("btn5.BackgroundImage"),System.Drawing.Image)
 		Me.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn5.Location = New System.Drawing.Point(67, 121)
+		Me.btn5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn5.Location = New System.Drawing.Point(68, 146)
 		Me.btn5.Name = "btn5"
 		Me.btn5.Size = New System.Drawing.Size(37, 28)
 		Me.btn5.TabIndex = 7
@@ -139,7 +148,8 @@ Partial Class MainForm
 		'
 		Me.btn6.BackgroundImage = CType(resources.GetObject("btn6.BackgroundImage"),System.Drawing.Image)
 		Me.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn6.Location = New System.Drawing.Point(110, 121)
+		Me.btn6.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn6.Location = New System.Drawing.Point(111, 146)
 		Me.btn6.Name = "btn6"
 		Me.btn6.Size = New System.Drawing.Size(36, 28)
 		Me.btn6.TabIndex = 8
@@ -152,7 +162,8 @@ Partial Class MainForm
 		Me.btn7.BackColor = System.Drawing.SystemColors.InactiveBorder
 		Me.btn7.BackgroundImage = CType(resources.GetObject("btn7.BackgroundImage"),System.Drawing.Image)
 		Me.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn7.Location = New System.Drawing.Point(24, 86)
+		Me.btn7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn7.Location = New System.Drawing.Point(25, 111)
 		Me.btn7.Name = "btn7"
 		Me.btn7.Size = New System.Drawing.Size(37, 29)
 		Me.btn7.TabIndex = 9
@@ -164,7 +175,8 @@ Partial Class MainForm
 		'
 		Me.btn8.BackgroundImage = CType(resources.GetObject("btn8.BackgroundImage"),System.Drawing.Image)
 		Me.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn8.Location = New System.Drawing.Point(67, 86)
+		Me.btn8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn8.Location = New System.Drawing.Point(68, 111)
 		Me.btn8.Name = "btn8"
 		Me.btn8.Size = New System.Drawing.Size(37, 29)
 		Me.btn8.TabIndex = 10
@@ -176,7 +188,8 @@ Partial Class MainForm
 		'
 		Me.btn9.BackgroundImage = CType(resources.GetObject("btn9.BackgroundImage"),System.Drawing.Image)
 		Me.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btn9.Location = New System.Drawing.Point(110, 86)
+		Me.btn9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btn9.Location = New System.Drawing.Point(111, 111)
 		Me.btn9.Name = "btn9"
 		Me.btn9.Size = New System.Drawing.Size(36, 29)
 		Me.btn9.TabIndex = 11
@@ -186,7 +199,10 @@ Partial Class MainForm
 		'
 		'btnEquals
 		'
-		Me.btnEquals.Location = New System.Drawing.Point(110, 188)
+		Me.btnEquals.BackgroundImage = CType(resources.GetObject("btnEquals.BackgroundImage"),System.Drawing.Image)
+		Me.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnEquals.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btnEquals.Location = New System.Drawing.Point(111, 213)
 		Me.btnEquals.Name = "btnEquals"
 		Me.btnEquals.Size = New System.Drawing.Size(36, 27)
 		Me.btnEquals.TabIndex = 12
@@ -196,7 +212,10 @@ Partial Class MainForm
 		'
 		'btnPlus
 		'
-		Me.btnPlus.Location = New System.Drawing.Point(152, 86)
+		Me.btnPlus.BackgroundImage = CType(resources.GetObject("btnPlus.BackgroundImage"),System.Drawing.Image)
+		Me.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnPlus.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btnPlus.Location = New System.Drawing.Point(153, 111)
 		Me.btnPlus.Name = "btnPlus"
 		Me.btnPlus.Size = New System.Drawing.Size(34, 29)
 		Me.btnPlus.TabIndex = 13
@@ -206,7 +225,9 @@ Partial Class MainForm
 		'
 		'btnClear
 		'
-		Me.btnClear.Location = New System.Drawing.Point(24, 57)
+		Me.btnClear.BackgroundImage = CType(resources.GetObject("btnClear.BackgroundImage"),System.Drawing.Image)
+		Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnClear.Location = New System.Drawing.Point(25, 82)
 		Me.btnClear.Name = "btnClear"
 		Me.btnClear.Size = New System.Drawing.Size(44, 23)
 		Me.btnClear.TabIndex = 14
@@ -216,7 +237,11 @@ Partial Class MainForm
 		'
 		'btnMultiply
 		'
-		Me.btnMultiply.Location = New System.Drawing.Point(152, 155)
+		Me.btnMultiply.BackgroundImage = CType(resources.GetObject("btnMultiply.BackgroundImage"),System.Drawing.Image)
+		Me.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnMultiply.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btnMultiply.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+		Me.btnMultiply.Location = New System.Drawing.Point(153, 180)
 		Me.btnMultiply.Name = "btnMultiply"
 		Me.btnMultiply.Size = New System.Drawing.Size(34, 27)
 		Me.btnMultiply.TabIndex = 16
@@ -226,7 +251,10 @@ Partial Class MainForm
 		'
 		'buttonDivide
 		'
-		Me.buttonDivide.Location = New System.Drawing.Point(152, 188)
+		Me.buttonDivide.BackgroundImage = CType(resources.GetObject("buttonDivide.BackgroundImage"),System.Drawing.Image)
+		Me.buttonDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.buttonDivide.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.buttonDivide.Location = New System.Drawing.Point(153, 213)
 		Me.buttonDivide.Name = "buttonDivide"
 		Me.buttonDivide.Size = New System.Drawing.Size(34, 27)
 		Me.buttonDivide.TabIndex = 17
@@ -236,7 +264,10 @@ Partial Class MainForm
 		'
 		'btnSubtract
 		'
-		Me.btnSubtract.Location = New System.Drawing.Point(152, 121)
+		Me.btnSubtract.BackgroundImage = CType(resources.GetObject("btnSubtract.BackgroundImage"),System.Drawing.Image)
+		Me.btnSubtract.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnSubtract.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+		Me.btnSubtract.Location = New System.Drawing.Point(153, 146)
 		Me.btnSubtract.Name = "btnSubtract"
 		Me.btnSubtract.Size = New System.Drawing.Size(34, 28)
 		Me.btnSubtract.TabIndex = 19
@@ -246,8 +277,10 @@ Partial Class MainForm
 		'
 		'btnDecimal
 		'
+		Me.btnDecimal.BackgroundImage = CType(resources.GetObject("btnDecimal.BackgroundImage"),System.Drawing.Image)
+		Me.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
 		Me.btnDecimal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-		Me.btnDecimal.Location = New System.Drawing.Point(67, 188)
+		Me.btnDecimal.Location = New System.Drawing.Point(68, 213)
 		Me.btnDecimal.Name = "btnDecimal"
 		Me.btnDecimal.Size = New System.Drawing.Size(37, 27)
 		Me.btnDecimal.TabIndex = 20
@@ -255,13 +288,26 @@ Partial Class MainForm
 		Me.btnDecimal.UseVisualStyleBackColor = true
 		AddHandler Me.btnDecimal.Click, AddressOf Me.BtnDecimalClick
 		'
+		'txtSumBox
+		'
+		Me.txtSumBox.BackColor = System.Drawing.Color.White
+		Me.txtSumBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+		Me.txtSumBox.Location = New System.Drawing.Point(35, 12)
+		Me.txtSumBox.Name = "txtSumBox"
+		Me.txtSumBox.ReadOnly = true
+		Me.txtSumBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+		Me.txtSumBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
+		Me.txtSumBox.Size = New System.Drawing.Size(152, 13)
+		Me.txtSumBox.TabIndex = 21
+		Me.txtSumBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		'
 		'MainForm
 		'
-		Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
-		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
 		Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
 		Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"),System.Drawing.Image)
 		Me.ClientSize = New System.Drawing.Size(216, 272)
+		Me.Controls.Add(Me.txtSumBox)
 		Me.Controls.Add(Me.btnDecimal)
 		Me.Controls.Add(Me.btnSubtract)
 		Me.Controls.Add(Me.buttonDivide)
@@ -284,7 +330,9 @@ Partial Class MainForm
 		Me.Name = "MainForm"
 		Me.Text = "Calculator"
 		Me.ResumeLayout(false)
+		Me.PerformLayout
 	End Sub
+	Private txtSumBox As System.Windows.Forms.TextBox
 	Private btnDecimal As System.Windows.Forms.Button
 	Private btnSubtract As System.Windows.Forms.Button
 	Private buttonDivide As System.Windows.Forms.Button
@@ -312,6 +360,7 @@ Partial Class MainForm
 	
 	Sub Btn0Click(sender As Object, e As EventArgs)
 		If txtDisplayBox.Text.Length >= 1 Then
+			txtSumBox.Text += btn0.Text
 			If inputFlag Then
 				txtDisplayBox.Text += btn0.Text
 			Else
@@ -323,6 +372,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn1Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn1.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn1.Text
 			calculateFlag = True
@@ -334,6 +384,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn2Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn2.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn2.Text
 			calculateFlag = True
@@ -345,6 +396,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn3Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn3.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn3.Text
 			calculateFlag = True
@@ -356,6 +408,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn4Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn4.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn4.Text
 			calculateFlag = True
@@ -367,6 +420,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn5Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn5.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn5.Text
 		Else
@@ -376,6 +430,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn6Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn6.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn6.Text
 			calculateFlag = True
@@ -387,6 +442,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn7Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn7.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn7.Text
 			calculateFlag = True
@@ -398,6 +454,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn8Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn8.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn8.Text
 			calculateFlag = True
@@ -409,6 +466,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub Btn9Click(sender As Object, e As EventArgs)
+		txtSumBox.Text += btn9.Text
 		If inputFlag Then
 			txtDisplayBox.Text += btn9.Text
 			calculateFlag = True
@@ -420,6 +478,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnClearClick(sender As Object, e As EventArgs)
+		txtSumBox.Text = ""
 		txtDisplayBox.Text = ""
 		mathmaticalOperator = ""
 		firstNum = 0
@@ -441,6 +500,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnMultiplyClick(sender As Object, e As EventArgs)
+		txtSumBox.Text += " " + btnMultiply.Text + " "
 		If mathmaticalOperator = String.Empty Then
 			firstNum = Val(txtDisplayBox.Text)
 			txtDisplayBox.Text = ""
@@ -451,6 +511,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub ButtonDivideClick(sender As Object, e As EventArgs)
+		txtSumBox.Text += " " + buttonDivide.Text + " "
 		If mathmaticalOperator = String.Empty Then
 			firstNum = Val(txtDisplayBox.Text)
 			txtDisplayBox.Text = ""
@@ -461,6 +522,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnSubtractClick(sender As Object, e As EventArgs)
+		txtSumBox.Text += " " + btnSubtract.Text + " "
 		If mathmaticalOperator = String.Empty Then
 			firstNum = Val(txtDisplayBox.Text)
 			txtDisplayBox.Text = ""
@@ -490,6 +552,7 @@ Partial Class MainForm
 	End Sub
 	
 	Sub BtnDecimalClick(sender As Object, e As EventArgs)
+		txtSumBox.Text += btnDecimal.Text
 		If Not txtDisplayBox.Text.Contains(".") Then
 			If txtDisplayBox.Text.Length = 0 Then
 				inputFlag = True

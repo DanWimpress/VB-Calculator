@@ -53,6 +53,7 @@ Partial Class MainForm
 		Me.btnSubtract = New System.Windows.Forms.Button()
 		Me.btnDecimal = New System.Windows.Forms.Button()
 		Me.txtSumBox = New System.Windows.Forms.TextBox()
+		Me.btnBackspace = New System.Windows.Forms.Button()
 		Me.SuspendLayout
 		'
 		'txtDisplayBox
@@ -227,7 +228,7 @@ Partial Class MainForm
 		'
 		Me.btnClear.BackgroundImage = CType(resources.GetObject("btnClear.BackgroundImage"),System.Drawing.Image)
 		Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.btnClear.Location = New System.Drawing.Point(25, 82)
+		Me.btnClear.Location = New System.Drawing.Point(68, 82)
 		Me.btnClear.Name = "btnClear"
 		Me.btnClear.Size = New System.Drawing.Size(44, 23)
 		Me.btnClear.TabIndex = 14
@@ -296,10 +297,23 @@ Partial Class MainForm
 		Me.txtSumBox.Name = "txtSumBox"
 		Me.txtSumBox.ReadOnly = true
 		Me.txtSumBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-		Me.txtSumBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
+		Me.txtSumBox.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
 		Me.txtSumBox.Size = New System.Drawing.Size(152, 13)
 		Me.txtSumBox.TabIndex = 21
 		Me.txtSumBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+		Me.txtSumBox.WordWrap = false
+		'
+		'btnBackspace
+		'
+		Me.btnBackspace.BackgroundImage = CType(resources.GetObject("btnBackspace.BackgroundImage"),System.Drawing.Image)
+		Me.btnBackspace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+		Me.btnBackspace.Location = New System.Drawing.Point(25, 82)
+		Me.btnBackspace.Name = "btnBackspace"
+		Me.btnBackspace.Size = New System.Drawing.Size(37, 23)
+		Me.btnBackspace.TabIndex = 22
+		Me.btnBackspace.Text = "<-"
+		Me.btnBackspace.UseVisualStyleBackColor = true
+		AddHandler Me.btnBackspace.Click, AddressOf Me.BtnBackspaceClick
 		'
 		'MainForm
 		'
@@ -307,6 +321,7 @@ Partial Class MainForm
 		Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
 		Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"),System.Drawing.Image)
 		Me.ClientSize = New System.Drawing.Size(216, 272)
+		Me.Controls.Add(Me.btnBackspace)
 		Me.Controls.Add(Me.txtSumBox)
 		Me.Controls.Add(Me.btnDecimal)
 		Me.Controls.Add(Me.btnSubtract)
@@ -332,6 +347,7 @@ Partial Class MainForm
 		Me.ResumeLayout(false)
 		Me.PerformLayout
 	End Sub
+	Private btnBackspace As System.Windows.Forms.Button
 	Private txtSumBox As System.Windows.Forms.TextBox
 	Private btnDecimal As System.Windows.Forms.Button
 	Private btnSubtract As System.Windows.Forms.Button
@@ -491,5 +507,11 @@ Partial Class MainForm
    		inputFlag = False
    		calculateFlag = False
    		End If
+	End Sub
+	
+	Sub BtnBackspaceClick(sender As Object, e As EventArgs)
+		If txtDisplayBox.Text.Length >= 1 Then
+			txtDisplayBox.Text = txtDisplayBox.Text.Remove(txtDisplayBox.Text.Length -1)
+		End If
 	End Sub
 End Class

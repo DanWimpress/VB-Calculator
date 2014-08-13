@@ -379,8 +379,10 @@ Partial Class MainForm
 		If txtDisplayBox.Text.Length >= 1 Then
 			If inputFlag Then
 				txtDisplayBox.Text += btn0.Text
+				txtSumBox.Text += btn0.Text
 			Else
 				txtDisplayBox.Text = btn0.Text
+				txtSumBox.Text = btn0.Text
 				inputFlag = True
 			End If
 			calculateFlag = True
@@ -492,7 +494,7 @@ Partial Class MainForm
 	
 	Private Sub CalculateNums()
 		If calculateFlag Then
-   			secondNum = Val(txtDisplayBox.Text)
+			secondNum = Val(txtDisplayBox.Text)
    			Select Case mathmaticalOperator
 	    		Case "+"
 		   			firstNum = firstNum + secondNum
@@ -512,6 +514,7 @@ Partial Class MainForm
 	Sub BtnBackspaceClick(sender As Object, e As EventArgs)
 		If txtDisplayBox.Text.Length >= 1 Then
 			txtDisplayBox.Text = txtDisplayBox.Text.Remove(txtDisplayBox.Text.Length -1)
+			txtSumBox.Text = txtSumBox.Text.Remove(txtSumBox.Text.Length -1)
 		End If
 	End Sub
 End Class
